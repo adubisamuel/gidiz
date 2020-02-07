@@ -1,7 +1,7 @@
 body {
-    background: #fff;
+    background: #FEFEFE;
     color: #000;
-    font-family: "Open Sans", sans-serif;
+    font-family: Montserrat;
     padding: 0;
     margin: 0;
     width: 100%;
@@ -27,10 +27,12 @@ a, a:hover, a:active, a:focus {
 
 #header #logo h1 {
     margin: 0;
-    padding: 6px 2px;
-    line-height: 1;
-    font-family: "Poppins", sans-serif;
-    letter-spacing: 1px;
+    /* padding: 6px 2px; */
+}
+
+#header #logo h1 a {
+    font-weight: 700;
+    font-size: 40px;
 }
   
 #header #logo h1 a, #header #logo h1 a:hover {
@@ -59,17 +61,19 @@ a, a:hover, a:active, a:focus {
 
 .nav-menu a {
     padding: 6px 8px 6px 8px;
+    color: #484848;
     text-decoration: none;
     display: inline-block;
-    font-family: "Poppins", sans-serif;
     font-weight: 500;
     outline: none;
+    font-size: 16px;
+    line-height: 27px;
 }
 
 .nav-menu a:hover,
 .nav-menu .active > a,
 .nav-menu li:hover > a {
-  color: purple !important;
+  color: #800080 !important;
   text-decoration: none;
 }
 
@@ -82,26 +86,29 @@ a, a:hover, a:active, a:focus {
     border-radius:50%;
     line-height:1em;
     color: white;
-    background: purple;
+    background: #800080;
     text-align:center;
     min-width: 1em;
 }
 
 .shopping-cart{
     position: absolute;
-    top: 22px;
+    top: 26px;
     right: 100px;
     cursor: pointer;
     display: block;
 }
+.shopping-cart a{
+    color: #484848;
+}
 
 .shopping-cart a:hover{
-    color: purple !important;
+    color: #800080 !important;
 }
 
 .menu-toggle{
     position: absolute;
-    top: 25px;
+    top: 28px;
     right: 28px;
     padding: 10px;
     cursor: pointer;
@@ -109,7 +116,7 @@ a, a:hover, a:active, a:focus {
 }
 
 .hambager, .hambager:before {
-    background: #424242;
+    background: #484848;
     width: 1.7em;
     content: "";
     display: block; 
@@ -130,7 +137,7 @@ a, a:hover, a:active, a:focus {
     width: 100%;
     height: 100vh;
     z-index: 1040;
-    background: purple;
+    background: #800080;
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
     transition: all 0.6s ease;
@@ -199,7 +206,6 @@ padding-top: 5px;
     padding: 0 8px 10px 8px;
     text-decoration: none;
     display: inline-block;
-    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 25px;
     letter-spacing: 2px;
@@ -334,15 +340,16 @@ transform: scaleX(1);
 
 .sns_btns a { 
     cursor: pointer;
+    color: rgba(72, 72, 72, 0.4);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
 }
 
 .sns_btns i { 
     margin: 25px 0;
-    opacity: 0.3;
 }
 
 .sns_btns i:hover { 
-    color: purple;
+    color: #800080;
     opacity: 1;
 }
 
@@ -364,7 +371,7 @@ transform: scaleX(1);
 }
 
 .sns_search .icon-search {
-    color: purple;
+    color: #800080;
     opacity: 0.7;
     cursor: pointer;
 }
@@ -380,7 +387,6 @@ transform: scaleX(1);
 .sb-search-input {
     background: #fff;
     font-size: 14px;
-    display: inline-block;
     padding: 8px 7px;
     border-radius: 50px;
     transition: 0.5s;
@@ -426,24 +432,26 @@ transform: scaleX(1);
 }
 
 #hero h1 {
-    padding: 60px 0px 20px 80px;
+    padding: 50px 0px 20px 80px;
     margin: 0;
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 700;
-    letter-spacing: 2px;
+    line-height: 60px;
+    color: #353535;
+    text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
 }
 
 @media (max-width: 1024px) {
     #hero h1 {
       padding-left: 30px;
-      font-size: 30px;
-      letter-spacing: 0px;
+      font-size: 28px;
+      line-height: 38px;
     }
 }
 
 @media (max-width: 768px) {
     #hero h1 {
-        font-size: 30px;
+        font-size: 28px;
         padding-top: 0px;
         padding-left: 32vw;
         /* text-align: left; */
@@ -455,28 +463,28 @@ transform: scaleX(1);
 @media (max-width: 568px) {
     #hero h1 {
         padding-left: 25vw;
+        font-size: 18px;
     }
 }
 
 #hero .btn-shop-now {
-    font-weight: 600;
-    background: purple;
-    font-size: 14px;
+    font-weight: 500;
+    font-size: 16px;
     margin: 0px 0px 0px 80px;
-    /* letter-spacing: 1px; */
     display: inline-block;
-    padding: 16px 25px;
-    border-radius: 50px;
+    padding: 18px 27px;
     transition: 0.2s;
-    /* margin: 10px; */
-    border: 2px solid #fff;
     cursor: pointer;
     outline: none;
+    background: #800080;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 100px;
 }
 
 @media (max-width: 1024px) {
     #hero .btn-shop-now {
         margin-left: 30px;
+        padding: 14px 22px;
     }
 }
 
@@ -532,7 +540,7 @@ transform: scaleX(1);
 
 @media (max-width: 568px) {
     .banner-carousel {
-        padding: 0 0 0 32vw;
+        padding: 0 0 0 28vw;
     }
 }
 
@@ -635,11 +643,11 @@ transform: scaleX(1);
 }
 
 .banner-text .price {
-    color: purple;
+    color: #800080;
     font-size: 14px;
     font-weight: 600;
     margin: 1px 0;
-    opacity: 0.4;
+    opacity: 0.6;
 }
 
 .banner-text .info {
@@ -655,19 +663,20 @@ transform: scaleX(1);
 }
 
 #hero .btn-purchase {
+    color: #800080;
     font-weight: 600;
-    color: purple;
     font-size: 12px;
-    /* margin: 0px 0px 0px 80px; */
-    /* letter-spacing: 1px; */
     display: inline-block;
-    padding: 12px 20px;
+    padding: 12px 22px;
     border-radius: 50px;
     transition: 0.5s;
     margin-top: 10px;
-    border: 2px solid purple;
     cursor: pointer;
     outline: none;
+    border: 1px solid #800080;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 100px;
 }
 
 @media (max-width: 768px) {
@@ -690,7 +699,7 @@ transform: scaleX(1);
 
 @media (max-width: 768px) {
     .search {
-        display: inline;
+        display: block;
     }
 }
 
@@ -728,19 +737,14 @@ transform: scaleX(1);
 }
 
 #footer {
-    /* background: #343b40; */
-    /* color: #fff; */
-    /* font-size: 14px; */
-    margin-top: 10px;
+    margin-top: 25px;
     padding: 10px 30px;
-    /* margin: 40px 0 0 0; */
-    /* height: 60px; */
     transition: all 0.5s;
 }
 
 @media (max-width: 768px) {
     #footer {
-        margin-top: 1px;
+        margin-top: 7px;
         padding: 2px 30px;
     }
 }
@@ -771,7 +775,7 @@ transform: scaleX(1);
     padding: 6px 8px;
     text-decoration: none;
     display: inline-block;
-    font-family: "Poppins", sans-serif;
+    color: #484848;
     font-weight: 500;
     outline: none;
 }
@@ -780,7 +784,7 @@ transform: scaleX(1);
     .footer-menu a {
         padding: 6px 5px;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 12px;
     }
 }
 
@@ -792,4 +796,8 @@ transform: scaleX(1);
 
 .copyright {
     padding: 6px 0;
+}
+
+.copyright a {
+    color: #484848;
 }
